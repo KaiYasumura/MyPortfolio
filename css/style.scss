@@ -885,119 +885,15 @@ button{
 =================================================*/
 .contact-form {
     padding: 50px 100px;
+    text-align: center;
 
     @include mq('tab') {
         padding: 50px;
     }
 }
 
-.contact-wrapper {
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-.contact-item {
-    display: flex;
-    margin-top: 30px;
-
-    &:first-child {
-        margin-top: 0;
-    }
-
-    @include mq('sp') {
-        display: block;
-    }
-}
-
-.contact-itemLeft {
-    width: 35%;
-    margin-right: 50px;
-    line-height: 38px;
-
-    @include mq('sp') {
-        width: 100%;
-        text-align: center;
-    }
-}
-
-.contact-itemRight {
-    width: 65%;
-
-    @include mq('sp') {
-        margin: 0 auto;
-        width: 90%;
-        margin-top: 10px;
-    }
-}
-
-input[type="text"],input[type="email"],select,textarea {
-    width: 100%;
-    padding: 10px 15px;
-    font-family: $font-family-default;
-    border-radius: 0;
-    border: 1px solid #000;
-
-    &:focus {
-        outline: 0;
-        border: 3px solid #000;
-    }
-}
-
-.submit-button {
-    text-align: center;
-    margin-top: 50px;
-}
-
-input[type="submit"] {
-    border: none;
-    padding: 10px 30px;
-    width: 200px;
-    background: #000;
-    color: #fff;
-    font-family: $font-family-default;
-}
-
-//selectの装飾
-.select-wrap {
-    width: 100%;
-    position: relative;
-    display: inline-block;
-
-    &:after {
-        content: '';
-        width: 6px;
-        height: 6px;
-        border: 0;
-        border-bottom: 1px solid #000;
-        border-right: 1px solid #000;
-        -ms-transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        margin-top: -5px;
-    }
-}
-
-select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-
-    &:-ms-expand {
-        display: none;
-    }
-
-    &:focus {
-        outline: 0;
-        border: 3px solid #000;
-    }
-}
-
-//labelの装飾
-label {
-    cursor: pointer;
+iframe {
+max-width: 1000px;
 }
 
 /* footer
