@@ -28,6 +28,15 @@ $(function(){
         }
       });
      
+    //link-areaの出現 
+    $(window).on("scroll", function($) {
+        if (jQuery(this).scrollTop() > 0) {
+          jQuery('.link-area').show();
+        } else {
+          jQuery('.link-area').hide();
+        }
+      });
+     
     //スムーススクロール
     $(function(){
       $('a[href^="#"]').click(function(){
